@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { A, aSans, aSerif, aMono } from '@/lib/theme';
 
 const principles = [
@@ -28,20 +29,17 @@ export default function About() {
           </div>
           <div style={{
             marginTop: 28, width: 200, aspectRatio: '3/4',
-            background: `repeating-linear-gradient(135deg, ${A.ink} 0px, ${A.ink} 1px, transparent 1px, transparent 8px), ${A.paper}`,
+            position: 'relative', overflow: 'hidden',
             border: `1px solid ${A.line}`,
-            position: 'relative',
           }}>
-            <div style={{
-              position: 'absolute', inset: 12,
-              border: `1px dashed ${A.ink3}`,
-              display: 'flex', flexDirection: 'column',
-              alignItems: 'center', justifyContent: 'center',
-              background: 'rgba(250,248,243,0.85)',
-            }}>
-              <div style={{ fontFamily: aMono, fontSize: 10, color: A.ink3, letterSpacing: '0.12em' }}>PORTRAIT</div>
-              <div style={{ fontFamily: aMono, fontSize: 9, color: A.ink3, marginTop: 4 }}>→ hi-res foto, 3:4</div>
-            </div>
+            <Image
+              src="/portrait.jpg"
+              alt="Igor Kister, Rechtsanwalt"
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'center top' }}
+              sizes="200px"
+              priority
+            />
           </div>
           <div style={{ marginTop: 14, fontFamily: aMono, fontSize: 10, color: A.ink3, letterSpacing: '0.1em' }}>
             FIG. 01 — IGOR KISTER, RA
@@ -80,9 +78,10 @@ export default function About() {
             }}
             className="about-2col"
           >
-            Daneben arbeite ich als Syndikusrechtsanwalt in der Industrie.
-            Dieser zweite Blickwinkel — aus dem Inneren eines Unternehmens heraus —
-            fließt unaufdringlich in meine Mandatsarbeit ein. Die Folge ist
+            Als Syndikusrechtsanwalt bei einem internationalen Automobilzulieferer
+            kenne ich die Welt aus dem Inneren eines Unternehmens. Vertragsverhandlungen,
+            Compliance, Versicherungsmanagement — ich habe diese Aufgaben selbst
+            täglich gelebt. Dieser Blickwinkel fließt in meine Mandatsarbeit ein:
             Beratung, die Risiken nicht nur auflistet, sondern priorisiert, und
             Kommunikation, die ohne Floskeln auskommt.
           </div>

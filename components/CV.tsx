@@ -1,11 +1,11 @@
 import { A, aSans, aSerif, aMono } from '@/lib/theme';
 
 const cv = [
-  ['2018 — heute', 'Rechtsanwalt', 'Zulassung RAK Freiburg · eigene Mandate'],
-  ['2020 — heute', 'Syndikusrechtsanwalt', 'Industrieunternehmen · Commercial & Contracts'],
-  ['2016 — 2018', 'Rechtsanwalt', 'Wirtschaftskanzlei, Bereich Commercial'],
-  ['2014 — 2016', 'Referendariat', 'Stationen in Industrie und Kanzlei'],
-  ['2008 — 2014', 'Studium der Rechtswissenschaften', 'Schwerpunkt Wirtschaftsrecht'],
+  ['seit 11/2022', 'Syndikusrechtsanwalt', 'IMS Gear SE & Co. KGaA · Legal, Insurance & Compliance'],
+  ['01/2020 – 10/2022', 'Rechtsanwalt', 'Schotten und Partner mbB / Haver & Mailänder · Öffentliches Wirtschaftsrecht, Bau- und Energierecht'],
+  ['2017 – 2019', 'Referendariat', 'Landgericht Heilbronn · 2. Juristische Staatsprüfung: 10,0 Punkte'],
+  ['2010 – 2017', 'Studium der Rechtswissenschaften', 'Universität Freiburg & ELTE Budapest · 1. Juristische Prüfung: 9,37 Punkte'],
+  ['nebenläufig', 'B.Sc. Psychologie', 'Fernuniversität Hagen · Note: 1,8'],
 ];
 
 export default function CV() {
@@ -36,7 +36,7 @@ export default function CV() {
             Ausbildung<br />&amp; <span style={{ fontStyle: 'italic' }}>Erfahrungen</span>
           </h2>
           <p style={{ fontFamily: aSans, fontSize: 14, color: A.ink2, marginTop: 24, lineHeight: 1.6 }}>
-            Eine chronologische Kurzfassung. Details und Publikationsliste auf Anfrage.
+            Eine chronologische Kurzfassung. Details auf Anfrage.
           </p>
         </div>
 
@@ -46,8 +46,8 @@ export default function CV() {
               key={i}
               style={{
                 display: 'grid',
-                gridTemplateColumns: '160px 1fr',
-                gap: 40,
+                gridTemplateColumns: '180px 1fr',
+                gap: 32,
                 padding: '28px 0',
                 borderTop: `1px solid ${A.line}`,
                 borderBottom: i === cv.length - 1 ? `1px solid ${A.line}` : 'none',
@@ -59,7 +59,7 @@ export default function CV() {
                 {row[0]}
               </div>
               <div>
-                <div style={{ fontFamily: aSerif, fontSize: 26, color: A.ink, lineHeight: 1.2 }}>{row[1]}</div>
+                <div style={{ fontFamily: aSerif, fontSize: 26, color: A.ink, lineHeight: 1.2 }} className="cv-entry-title">{row[1]}</div>
                 <div style={{ fontFamily: aSans, fontSize: 14, color: A.ink2, marginTop: 6 }}>{row[2]}</div>
               </div>
             </div>

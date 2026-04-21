@@ -1,6 +1,7 @@
 import { A, aSans, aSerif, aMono } from '@/lib/theme';
 
 const cv = [
+  ['seit 11/2022', 'Kanzlei Kister', 'Eigene Kanzlei · Vertragsrecht, Commercial, Zivilrecht, Baurecht'],
   ['seit 11/2022', 'Syndikusrechtsanwalt', 'IMS Gear SE & Co. KGaA · Legal, Insurance & Compliance'],
   ['01/2020 – 10/2022', 'Rechtsanwalt', 'Schotten und Partner mbB / Haver & Mailänder · Öffentliches Wirtschaftsrecht, Bau- und Energierecht'],
   ['2017 – 2019', 'Referendariat', 'Landgericht Heilbronn · 2. Juristische Staatsprüfung'],

@@ -1,0 +1,57 @@
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a { text-decoration: none; color: inherit; }
+button { font: inherit; }
+
+/* ── Component styles ── */
+.footer-link:hover { color: #1f1d1a !important; }
+
+/* ── Responsive layout overrides ── */
+
+@media (max-width: 1024px) {
+  .header-section { padding: 18px 32px !important; }
+  .section-padding { padding-left: 32px !important; padding-right: 32px !important; }
+  .hero-title { font-size: 72px !important; letter-spacing: -1.5px !important; }
+  .fees-grid { grid-template-columns: 1fr !important; }
+  .fees-grid > div { border-right: none !important; border-bottom: 1px solid rgba(31,29,26,0.14) !important; }
+  .fees-grid > div:last-child { border-bottom: none !important; }
+}
+
+@media (max-width: 768px) {
+  .header-section { padding: 16px 20px !important; }
+  .nav-links { display: none !important; }
+  .section-padding { padding-left: 20px !important; padding-right: 20px !important; }
+  .section-v-padding { padding-top: 64px !important; padding-bottom: 64px !important; }
+
+  .hero-title { font-size: 48px !important; letter-spacing: -1px !important; line-height: 1.05 !important; }
+  .hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .hero-card { padding-top: 0 !important; }
+
+  .about-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .about-title { font-size: 36px !important; letter-spacing: -0.5px !important; }
+  .about-body { font-size: 18px !important; }
+  .about-2col { column-count: 1 !important; }
+
+  .practice-header { flex-direction: column !important; align-items: flex-start !important; gap: 16px !important; }
+  .practice-grid { grid-template-columns: 1fr !important; }
+  .practice-grid > div { border-right: none !important; }
+  .practice-title { font-size: 32px !important; }
+  .section-title { font-size: 36px !important; letter-spacing: -0.5px !important; }
+
+  .cv-grid { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .cv-row { grid-template-columns: 1fr !important; gap: 8px !important; }
+
+  .fees-grid { grid-template-columns: 1fr !important; }
+  .fees-grid > div { border-right: none !important; border-bottom: 1px solid rgba(31,29,26,0.14) !important; }
+  .fees-grid > div:last-child { border-bottom: none !important; }
+  .fees-price { font-size: 40px !important; }
+
+  .contact-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
+  .contact-title { font-size: 52px !important; letter-spacing: -1px !important; }
+  .contact-info-grid { grid-template-columns: 1fr !important; }
+
+  .footer-grid { grid-template-columns: 1fr !important; gap: 24px !important; align-items: flex-start !important; }
+  .footer-links { flex-wrap: wrap !important; gap: 16px !important; }
+  .footer-bottom { flex-direction: column !important; gap: 8px !important; }
+}

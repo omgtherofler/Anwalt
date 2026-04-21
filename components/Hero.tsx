@@ -5,7 +5,7 @@ export default function Hero() {
     <section
       id="hero"
       style={{ padding: '90px 64px 110px', background: A.bg }}
-      className="section-padding section-v-padding"
+      className="section-padding section-v-padding snap-section"
     >
       <div
         style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}

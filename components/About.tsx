@@ -4,7 +4,7 @@ import { A, aSans, aSerif, aMono } from '@/lib/theme';
 const principles = [
   'Klarheit vor Jargon',
   'Risiko priorisieren, nicht katalogisieren',
-  'Erreichbar, auch werktags',
+  'Persönlich erreichbar',
   'Festpreis, wo möglich',
 ];
 
@@ -13,7 +13,7 @@ export default function About() {
     <section
       id="profil"
       style={{ padding: '110px 64px', background: A.bgAlt, borderTop: `1px solid ${A.line}` }}
-      className="section-padding section-v-padding"
+      className="section-padding section-v-padding snap-section"
     >
       <div
         style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 80 }}

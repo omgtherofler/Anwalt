@@ -57,7 +57,7 @@ export default function Contact() {
         position: 'relative',
         overflow: 'hidden',
       }}
-      className="section-padding section-v-padding"
+      className="section-padding section-v-padding snap-section"
     >
       <div
         aria-hidden

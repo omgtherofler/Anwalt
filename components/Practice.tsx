@@ -32,7 +32,7 @@ export default function Practice() {
     <section
       id="rechtsgebiete"
       style={{ padding: '110px 64px', background: A.bg }}
-      className="section-padding section-v-padding"
+      className="section-padding section-v-padding snap-section"
     >
       <div
         style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 60 }}

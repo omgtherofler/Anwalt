@@ -18,7 +18,8 @@ export default function About() {
         style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 80 }}
         className="about-grid"
       >
-        <div>
+
+        <div className="about-portrait">
           <div style={{
             fontFamily: aSans, fontSize: 11, letterSpacing: '0.18em',
             textTransform: 'uppercase', color: A.ink3, fontWeight: 500,
@@ -86,7 +87,7 @@ export default function About() {
             Kommunikation, die ohne Floskeln auskommt.
           </div>
 
-          <div style={{ marginTop: 44, display: 'flex', gap: 32, flexWrap: 'wrap' }}>
+          <div style={{ marginTop: 44, display: 'flex', gap: 32, flexWrap: 'wrap' }} className="about-principles">
             {principles.map((x, i) => (
               <div key={i} style={{ display: 'flex', alignItems: 'center', gap: 10, fontFamily: aSans, fontSize: 14, color: A.ink }}>
                 <span style={{ width: 6, height: 6, borderRadius: 3, background: A.accent, flexShrink: 0 }} />

@@ -30,7 +30,7 @@ export default function Datenschutz() {
         <Section title="Verantwortlicher">
           <p>
             Igor Kister, Rechtsanwalt<br />
-            Kaiser-Joseph-Straße [Nr.], 79098 Freiburg im Breisgau<br />
+            Elefantenweg 71, 79110 Freiburg im Breisgau<br />
             E-Mail: kanzlei@kister-law.de
           </p>
         </Section>

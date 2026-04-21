@@ -44,7 +44,7 @@ export default function Hero() {
             überflüssige Paragrafenprosa.
           </p>
 
-          <div style={{ display: 'flex', gap: 14, marginTop: 44, flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: 14, marginTop: 44, flexWrap: 'wrap' }} className="hero-ctas">
             <a
               href="#kontakt"
               style={{
@@ -98,7 +98,7 @@ export default function Hero() {
             <div style={{
               display: 'grid', gridTemplateColumns: '110px 1fr',
               rowGap: 14, fontFamily: aSans, fontSize: 14,
-            }}>
+            }} className="hero-visitenkarte-grid">
               <div style={{ color: A.ink3 }}>Schwerpunkte</div>
               <div style={{ color: A.ink }}>Vertragsrecht · Commercial · Baurecht · Zivilrecht</div>
               <div style={{ color: A.ink3 }}>Mandanten</div>
@@ -112,8 +112,8 @@ export default function Hero() {
             <div style={{ height: 1, background: A.line, margin: '32px 0' }} />
 
             <div style={{ fontFamily: aMono, fontSize: 11, color: A.ink3, letterSpacing: '0.08em', lineHeight: 1.8 }}>
-              KAISER-JOSEPH-STRASSE [NR.] · 79098 FREIBURG I. BR.<br />
-              +49 761 000 00 00 · KANZLEI@KISTER-LAW.DE
+              ELEFANTENWEG 71 · 79110 FREIBURG IM BREISGAU<br />
+              KANZLEI@KISTER-LAW.DE
             </div>
           </div>
         </div>

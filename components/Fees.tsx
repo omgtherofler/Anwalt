@@ -120,7 +120,7 @@ export default function Fees() {
         <div style={{
           marginTop: 32, padding: '20px 24px', background: A.paper, border: `1px solid ${A.line}`,
           display: 'flex', gap: 20, alignItems: 'center',
-        }}>
+        }} className="fees-note">
           <div style={{
             width: 36, height: 36, borderRadius: 18, background: A.accent,
             color: A.paper, display: 'flex', alignItems: 'center', justifyContent: 'center',

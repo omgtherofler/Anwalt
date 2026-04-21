@@ -106,8 +106,8 @@ export default function Contact() {
             className="contact-info-grid"
           >
             {[
-              ['Direktkontakt', 'kanzlei@kister-law.de', '+49 761 000 00 00'],
-              ['Postanschrift', 'Kaiser-Joseph-Straße [Nr.]', '79098 Freiburg i. Br.'],
+              ['Direktkontakt', 'kanzlei@kister-law.de', ''],
+              ['Postanschrift', 'Elefantenweg 71', '79110 Freiburg i. Br.'],
               ['Bürozeiten', 'Mo – Fr, 09:00 – 18:00', 'Termine auf Anfrage'],
               ['Sprachen', 'Deutsch · Englisch · Russisch', ''],
             ].map(([h, a, b], i) => (

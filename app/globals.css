@@ -6,6 +6,18 @@ body { margin: 0; overflow-x: hidden; }
   scroll-snap-align: start;
   min-height: 100vh;
   scroll-margin-top: 66px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-inner {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 64px;
+  padding-right: 64px;
 }
 a { text-decoration: none; color: inherit; }
 button { font: inherit; }

@@ -51,13 +51,13 @@ export default function Contact() {
     <section
       id="kontakt"
       style={{
-        padding: '110px 64px',
+        padding: '110px 0',
         background: A.ink,
         color: A.paper,
         position: 'relative',
         overflow: 'hidden',
       }}
-      className="section-padding section-v-padding snap-section"
+      className="section-v-padding snap-section"
     >
       <div
         aria-hidden
@@ -70,7 +70,7 @@ export default function Contact() {
         §
       </div>
 
-      <div className="section-inner" style={{ position: 'relative' }}>
+      <div className="section-inner section-padding" style={{ position: 'relative' }}>
       <div
         style={{ display: 'grid', gridTemplateColumns: '1fr 520px', gap: 80 }}
         className="contact-grid"

@@ -12,10 +12,10 @@ export default function About() {
   return (
     <section
       id="profil"
-      style={{ padding: '110px 64px', background: A.bgAlt, borderTop: `1px solid ${A.line}` }}
-      className="section-padding section-v-padding snap-section"
+      style={{ padding: '110px 0', background: A.bgAlt, borderTop: `1px solid ${A.line}` }}
+      className="section-v-padding snap-section"
     >
-      <div className="section-inner">
+      <div className="section-inner section-padding">
       <div
         style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 80 }}
         className="about-grid"

@@ -4,10 +4,10 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      style={{ padding: '90px 64px 110px', background: A.bg }}
-      className="section-padding section-v-padding snap-section"
+      style={{ padding: '90px 0 110px', background: A.bg }}
+      className="section-v-padding snap-section"
     >
-      <div className="section-inner">
+      <div className="section-inner section-padding">
       <div
         style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}
         className="hero-grid"

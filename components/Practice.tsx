@@ -31,10 +31,10 @@ export default function Practice() {
   return (
     <section
       id="rechtsgebiete"
-      style={{ padding: '110px 64px', background: A.bg }}
-      className="section-padding section-v-padding snap-section"
+      style={{ padding: '110px 0', background: A.bg }}
+      className="section-v-padding snap-section"
     >
-      <div className="section-inner">
+      <div className="section-inner section-padding">
       <div
         style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 60 }}
         className="practice-header"

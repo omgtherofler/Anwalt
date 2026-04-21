@@ -13,10 +13,10 @@ export default function CV() {
   return (
     <section
       id="erfahrungen"
-      style={{ padding: '110px 64px', background: A.paper, borderTop: `1px solid ${A.line}` }}
-      className="section-padding section-v-padding snap-section"
+      style={{ padding: '110px 0', background: A.paper, borderTop: `1px solid ${A.line}` }}
+      className="section-v-padding snap-section"
     >
-      <div className="section-inner">
+      <div className="section-inner section-padding">
       <div
         style={{ display: 'grid', gridTemplateColumns: '380px 1fr', gap: 80 }}
         className="cv-grid"

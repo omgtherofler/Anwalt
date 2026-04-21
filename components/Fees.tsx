@@ -28,10 +28,10 @@ export default function Fees() {
   return (
     <section
       id="honorar"
-      style={{ padding: '110px 64px', background: A.bgAlt }}
-      className="section-padding section-v-padding snap-section"
+      style={{ padding: '110px 0', background: A.bgAlt }}
+      className="section-v-padding snap-section"
     >
-      <div className="section-inner" style={{ maxWidth: 1100, margin: '0 auto' }}>
+      <div className="section-inner section-padding" style={{ maxWidth: 1100, margin: '0 auto' }}>
         <div style={{ textAlign: 'center', marginBottom: 70 }}>
           <div style={{
             fontFamily: aSans, fontSize: 11, letterSpacing: '0.18em',

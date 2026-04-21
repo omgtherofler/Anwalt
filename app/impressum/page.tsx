@@ -37,7 +37,10 @@ export default function Impressum() {
         </Section>
 
         <Section title="Kontakt">
-          <p>E-Mail: <a href="mailto:kanzlei@kister-law.de" style={{ color: A.accent }}>kanzlei@kister-law.de</a></p>
+          <p>
+            Telefon: <a href="tel:+4915560873381" style={{ color: A.accent }}>0155 60873381</a><br />
+            E-Mail: <a href="mailto:Igor@kanzlei-kister.com" style={{ color: A.accent }}>Igor@kanzlei-kister.com</a>
+          </p>
         </Section>
 
         <Section title="Berufsbezeichnung und berufsrechtliche Regelungen" id="berufsrecht">
@@ -62,7 +65,18 @@ export default function Impressum() {
 
         <Section title="Berufshaftpflichtversicherung">
           <p>
-            <em style={{ color: A.ink3 }}>Angaben zur Berufshaftpflichtversicherung (Versicherer, Anschrift, räumlicher Geltungsbereich) werden ergänzt.</em>
+            andsafe Aktiengesellschaft<br />
+            Provinzial-Allee 1<br />
+            48159 Münster<br />
+            <a href="https://www.andsafe.de" style={{ color: A.accent }}>www.andsafe.de</a>
+          </p>
+          <p>Räumlicher Geltungsbereich: Bundesrepublik Deutschland</p>
+        </Section>
+
+        <Section title="Umsatzsteuer">
+          <p>
+            Gemäß § 19 UStG wird keine Umsatzsteuer berechnet
+            (Kleinunternehmerregelung).
           </p>
         </Section>
 

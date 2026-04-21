@@ -113,7 +113,7 @@ export default function Hero() {
 
             <div style={{ fontFamily: aMono, fontSize: 11, color: A.ink3, letterSpacing: '0.08em', lineHeight: 1.8 }}>
               ELEFANTENWEG 71 · 79110 FREIBURG IM BREISGAU<br />
-              KANZLEI@KISTER-LAW.DE
+              IGOR@KANZLEI-KISTER.COM · 0155 60873381
             </div>
           </div>
         </div>

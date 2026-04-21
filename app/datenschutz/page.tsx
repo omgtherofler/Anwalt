@@ -31,7 +31,7 @@ export default function Datenschutz() {
           <p>
             Igor Kister, Rechtsanwalt<br />
             Elefantenweg 71, 79110 Freiburg im Breisgau<br />
-            E-Mail: kanzlei@kister-law.de
+            E-Mail: Igor@kanzlei-kister.com
           </p>
         </Section>
 

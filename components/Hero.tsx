@@ -7,6 +7,7 @@ export default function Hero() {
       style={{ padding: '90px 64px 110px', background: A.bg }}
       className="section-padding section-v-padding snap-section"
     >
+      <div className="section-inner">
       <div
         style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, alignItems: 'start' }}
         className="hero-grid"
@@ -117,6 +118,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

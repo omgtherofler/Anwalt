@@ -70,8 +70,9 @@ export default function Contact() {
         §
       </div>
 
+      <div className="section-inner" style={{ position: 'relative' }}>
       <div
-        style={{ display: 'grid', gridTemplateColumns: '1fr 520px', gap: 80, position: 'relative' }}
+        style={{ display: 'grid', gridTemplateColumns: '1fr 520px', gap: 80 }}
         className="contact-grid"
       >
         <div>
@@ -231,6 +232,7 @@ export default function Contact() {
             </form>
           )}
         </div>
+      </div>
       </div>
     </section>
   );

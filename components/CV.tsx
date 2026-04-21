@@ -16,6 +16,7 @@ export default function CV() {
       style={{ padding: '110px 64px', background: A.paper, borderTop: `1px solid ${A.line}` }}
       className="section-padding section-v-padding snap-section"
     >
+      <div className="section-inner">
       <div
         style={{ display: 'grid', gridTemplateColumns: '380px 1fr', gap: 80 }}
         className="cv-grid"
@@ -66,6 +67,7 @@ export default function CV() {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

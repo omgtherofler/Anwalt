@@ -34,6 +34,7 @@ export default function Practice() {
       style={{ padding: '110px 64px', background: A.bg }}
       className="section-padding section-v-padding snap-section"
     >
+      <div className="section-inner">
       <div
         style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: 60 }}
         className="practice-header"
@@ -110,6 +111,7 @@ export default function Practice() {
             </div>
           </div>
         ))}
+      </div>
       </div>
     </section>
   );

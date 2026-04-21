@@ -15,6 +15,7 @@ export default function About() {
       style={{ padding: '110px 64px', background: A.bgAlt, borderTop: `1px solid ${A.line}` }}
       className="section-padding section-v-padding snap-section"
     >
+      <div className="section-inner">
       <div
         style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 80 }}
         className="about-grid"
@@ -95,6 +96,7 @@ export default function About() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

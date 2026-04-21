@@ -3,9 +3,9 @@ import { A, aSans, aSerif, aMono } from '@/lib/theme';
 const cv = [
   ['seit 11/2022', 'Syndikusrechtsanwalt', 'IMS Gear SE & Co. KGaA · Legal, Insurance & Compliance'],
   ['01/2020 – 10/2022', 'Rechtsanwalt', 'Schotten und Partner mbB / Haver & Mailänder · Öffentliches Wirtschaftsrecht, Bau- und Energierecht'],
-  ['2017 – 2019', 'Referendariat', 'Landgericht Heilbronn · 2. Juristische Staatsprüfung: 10,0 Punkte'],
-  ['2010 – 2017', 'Studium der Rechtswissenschaften', 'Universität Freiburg & ELTE Budapest · 1. Juristische Prüfung: 9,37 Punkte'],
-  ['nebenläufig', 'B.Sc. Psychologie', 'Fernuniversität Hagen · Note: 1,8'],
+  ['2017 – 2019', 'Referendariat', 'Landgericht Heilbronn · 2. Juristische Staatsprüfung'],
+  ['2010 – 2017', 'Studium der Rechtswissenschaften', 'Universität Freiburg & ELTE Budapest · Schwerpunkt Arbeits- und Sozialrecht'],
+  ['nebenläufig', 'B.Sc. Psychologie', 'Fernuniversität Hagen'],
 ];
 
 export default function CV() {

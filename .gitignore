@@ -32,3 +32,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# submissions data
+data/submissions.json
+/tmp/submissions.json
+.claude/

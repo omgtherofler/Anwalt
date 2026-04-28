@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
         from: process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev',
         to: [process.env.CONTACT_EMAIL || 'Igor.kister@posteo.de'],
         reply_to: email,
-        subject: `Neue Anfrage über kister-law.de: ${name}`,
+        subject: `Neue Anfrage über kanzlei-kister.com: ${name}`,
         html: `
           <div style="font-family: sans-serif; max-width: 600px;">
             <h2 style="margin-bottom: 24px;">Neue Kontaktanfrage</h2>

@@ -1,5 +1,5 @@
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-snap-type: y mandatory; }
+html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
 body { margin: 0; overflow-x: hidden; }
 
 .snap-section {

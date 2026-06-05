@@ -59,7 +59,7 @@ export async function generateMetadata({
       type: 'website',
       images: [
         {
-          url: `${BASE_URL}/og-image.jpg`,
+          url: `${BASE_URL}/opengraph-image`,
           width: 1200,
           height: 630,
           alt: 'Kanzlei Kister — Igor Kister, Rechtsanwalt Freiburg',
@@ -70,6 +70,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: t.meta.title,
       description: t.meta.description,
+      images: [`${BASE_URL}/opengraph-image`],
     },
     robots: {
       index: true,
@@ -109,8 +110,8 @@ const jsonLd = {
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 48.0,
-    longitude: 7.85,
+    latitude: 48.0058,
+    longitude: 7.8279,
   },
   openingHoursSpecification: [
     {
@@ -122,12 +123,14 @@ const jsonLd = {
   ],
   areaServed: {
     '@type': 'GeoCircle',
-    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 48.0, longitude: 7.85 },
+    geoMidpoint: { '@type': 'GeoCoordinates', latitude: 48.0058, longitude: 7.8279 },
     geoRadius: '200000',
   },
   priceRange: '€€',
   hasMap: 'https://maps.google.com/?q=Elefantenweg+71,+79110+Freiburg+im+Breisgau',
-  sameAs: [],
+  sameAs: [
+    'https://www.linkedin.com/in/igor-kister-9509771a6/',
+  ],
 };
 
 export default function LangLayout({

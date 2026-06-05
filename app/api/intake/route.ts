@@ -1,8 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { saveSubmission } from '@/lib/submissions';
-import { Resend } from 'resend';
+import nodemailer from 'nodemailer';
 
-const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
+function getTransporter() {
+  if (!process.env.POSTEO_USER || !process.env.POSTEO_PASS) return null;
+  return nodemailer.createTransport({
+    host: 'posteo.de',
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.POSTEO_USER,
+      pass: process.env.POSTEO_PASS,
+    },
+  });
+}
 
 const URGENCY_EMOJI: Record<string, string> = {
   Normal: '🟢',
@@ -96,16 +107,17 @@ export async function POST(req: NextRequest) {
 </body>
 </html>`;
 
-    if (resend) {
-      await resend.emails.send({
-        from: process.env.RESEND_FROM_EMAIL || 'noreply@kanzlei-kister.com',
-        to: 'Igor@kanzlei-kister.com',
-        reply_to: email,
+    const transporter = getTransporter();
+    if (transporter) {
+      await transporter.sendMail({
+        from: process.env.POSTEO_USER,
+        to: process.env.CONTACT_EMAIL || 'Igor.kister@posteo.de',
+        replyTo: email,
         subject: `${urgencyIcon} Neue Anfrage — ${area} — ${name}`,
         html: htmlBody,
       });
     } else {
-      console.log('[intake] No RESEND_API_KEY — email not sent:', { name, email, area, urgency });
+      console.log('[intake] No POSTEO_USER/PASS — email not sent:', { name, email, area, urgency });
     }
 
     return NextResponse.json({ success: true, id: entry.id });
